@@ -1,0 +1,38 @@
+{
+  "name": "notes-backlog",
+  "version": "0.0.0",
+  "license": "ISC",
+  "author": "fjr",
+  "description": "跨平台的todo应用",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@electron/remote": "^2.0.1",
+    "electron-store": "^8.0.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "simple-flakeid": "^0.0.5",
+    "vue": "^3.2.25",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@bin-tools/build-electron": "^1.0.4",
+    "@vitejs/plugin-vue": "^2.0.0",
+    "electron": "^16.0.7",
+    "electron-builder": "^22.14.5",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "naive-ui": "^2.24.6",
+    "typescript": "^4.4.4",
+    "vite": "^2.7.2",
+    "vue-tsc": "^0.29.8"
+  },
+  "config": {
+ 
+    "unsafe-perm":true
+ 
+}
+}
