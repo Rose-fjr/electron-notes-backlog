@@ -56,7 +56,7 @@ export default defineConfig({
         },
         files: ['**'],
         productName: "便签",
-        appId: "com.bianqian.binbin",
+        appId: "com.fjr.binbin",
         asar: true,
         extraResources: './resource/release',
         win: {

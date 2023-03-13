@@ -6,6 +6,7 @@
     "moduleResolution": "node",
     "strict": false,
     "jsx": "preserve",
+    "skipLibCheck": true,
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
