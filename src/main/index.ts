@@ -8,6 +8,7 @@ import start from './manager/task'
 import { getImagePath } from './manager/file'
 import { StatusModel } from '@/common/interface'
 import { addTodo } from './manager/todo'
+import { join } from 'path';
 
 // var cmd = process.argv[1];
 

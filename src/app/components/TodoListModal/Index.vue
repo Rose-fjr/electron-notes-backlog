@@ -3,6 +3,7 @@
         <transition name="todo-list">
             <div class="todo-list-modal" v-if="show">
                 <span class="icon-close" @click="closeClick" />
+                
                 <div class="content">
                     <div class="todo-list-item" v-for="(item, index) in data" :key="index">
                         <div class="title">{{ item.key }}</div>
@@ -16,10 +17,10 @@
                             />
                         </div>
                     </div>
+                    <div v-if="data.length == 0" class="no-data-hint">暂无数据</div>
                 </div>
-
-                <div class="btns">
-                    <n-button type="error" v-if="type == 3" @click="clear">清空</n-button>
+                <div class="btns" v-if="type == 3">
+                    <n-button type="error"  @click="clear">清空</n-button>
                 </div>
             </div>
         </transition>
@@ -175,7 +176,10 @@ const clear = () => {
                 border-radius: 20px;
             }
         }
-
+        .no-data-hint{
+            text-align: center;
+            padding-top: 60%;
+        }
         .todo-list-item {
             margin: 10px;
             background: rgba(65, 65, 65, 0.5);

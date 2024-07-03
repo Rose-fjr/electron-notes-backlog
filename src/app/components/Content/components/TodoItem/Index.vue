@@ -46,7 +46,7 @@ import { RemindModel, StatusModel, TodoModel, RemindWayModel } from "@/common/in
 import { NCheckbox, useMessage } from "naive-ui";
 import { getCurrentInstance, inject, Ref, ref, toRaw, watch } from "vue";
 import AddTodoInfo from "../AddTodoInfo";
-import CycleSetting from "../CycleSetting/Index.vue";
+import CycleSetting from "../CycleSetting/index";
 import moment from 'moment';
 
 const message = useMessage();

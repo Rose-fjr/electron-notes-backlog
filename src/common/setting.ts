@@ -54,15 +54,15 @@ export class UserSetting {
     // 初始化第一次
     private init() {
         this.audio = {
-            add: path.resolve(app.getAppPath(), 'static/audio/复古通知.wav'),
+            add: path.resolve(app.getAppPath(), 'static/audio/katoinform.wav'),
             haveAdd: true,
-            remove: path.resolve(app.getAppPath(), "static/audio/删除.mp3"),
+            remove: path.resolve(app.getAppPath(), "static/audio/delete.mp3"),
             haveRemove: true,
-            complate: path.resolve(app.getAppPath(), "static/audio/完成.mp3"),
+            complate: path.resolve(app.getAppPath(), "static/audio/accomplish.mp3"),
             haveComplate: true,
-            clear: path.resolve(app.getAppPath(), 'static/audio/清空.wav'),
+            clear: path.resolve(app.getAppPath(), 'static/audio/empty.wav'),
             haveClear: true,
-            tip: path.resolve(app.getAppPath(), 'static/audio/卡农.mp3'),
+            tip: path.resolve(app.getAppPath(), 'static/audio/kano.mp3'),
             haveTip: true
         }
         this.base = {

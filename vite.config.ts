@@ -55,8 +55,8 @@ export default defineConfig({
           app: vueOutDir
         },
         files: ['**'],
-        productName: "便签",
-        appId: "com.fjr.binbin",
+        productName: "backlog",
+        appId: "com.fjr.app",
         asar: true,
         extraResources: './resource/release',
         win: {
@@ -64,7 +64,6 @@ export default defineConfig({
           icon: "./public/logo.ico"
         },
         mac: {
-          icon: "./public/logo.ico",
           category: "public.app-category-productivity",
           artifactName: "${productName}_${version}.${ext}",// 应用程序包名
           target: ["dmg", "zip"]
